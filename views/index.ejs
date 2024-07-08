@@ -1,0 +1,21 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product List</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="product-list">
+    <% products.forEach(product => { %>
+      <div class="product-card">
+        <h3><%= product.name %></h3>
+        <p><%= product.description %></p>
+        <span>$<%= product.price.toFixed(2) %></span>
+      </div>
+    <% }); %>
+  </div>
+  <a href="/views/add-product">Add product</a>
+</body>
+</html>

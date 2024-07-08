@@ -1,0 +1,38 @@
+/* Apply styles to all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the input field when it gets focus */
+input:focus {
+    border-color: #3CBC8D; /* Change the border color on focus */
+    outline: none; /* Remove the default blue outline */
+}
+
+/* Apply similar styles to textareas */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #3CBC8D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+button[type="submit"]:hover {
+    background-color: #2E9E6D;
+}
